@@ -1,7 +1,7 @@
 import turtle as te
 from typing import Tuple
 
-WriteSteps = 500        # Sampling times of Bessel function
+WriteSteps = 500        # Sampling times of Bezier function
 Speed = 1
 Width = 600             # Interface width
 Height = 500            # Interface height
@@ -59,7 +59,7 @@ def bezier_curve_through(points, relative: bool = False):
     points.insert(0, curr)
     bezier_curve(tuple(points))
     Xh = points[-1][0] - points[-2][0]
-    yh = points[-1][1] - points[-2][1]
+    Yh = points[-1][1] - points[-2][1]
 
 
 def smooth_bezier_curve(points, relative: bool = False):
